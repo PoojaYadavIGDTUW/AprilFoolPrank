@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Question...</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="prank-container">
+    <div class="question-box">
+      <h1>🤔 Quick Question...</h1>
+      <p class="question-text">Will you buy me a coffee? ☕</p>
+      
+      <div class="button-group">
+        <button id="yes-btn" class="btn btn-yes">Yes, of course! 💖</button>
+        <button id="no-btn" class="btn btn-no">No way ❌</button>
+      </div>
+    </div>
+    
+    <!-- Success Modal (hidden initially) -->
+    <div id="success-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>🎉 April Fools! 🎉</h2>
+        <p>You just agreed to buy me infinite coffee!</p>
+        <p class="small">(Don't worry, I don't actually drink that much caffeine)</p>
+        <button onclick="location.reload()" class="btn">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti"></canvas>
+  
+  <script src="script.js"></script>
+</body>
+</html>
